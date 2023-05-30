@@ -1,0 +1,11 @@
+Prerequisites:
+1. Install Docker on your local machine 
+2. Install appropriate trivy binary file from the below link
+https://github.com/aquasecurity/trivy/releases/tag/v0.41.0
+
+Using the CLI navigate to the trivy folder and follow below steps for trivy vulnerabilities scan. 
+Pull the Docker image you want to scan. For example, to pull the official nginx image, run the following command:
+--> docker pull nginx
+--> ./trivy image nginx
+
+Trivy will start scanning the Docker image and provide the vulnerability report in the terminal output. The scan results will include information about vulnerabilities found, their severity levels, and suggested remediation steps.
